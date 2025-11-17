@@ -1,6 +1,6 @@
 import { useFonts } from 'expo-font';
-import { Slot, SplashScreen } from 'expo-router';
-import React, { useEffect } from 'react';
+import { Slot, SplashScreen} from 'expo-router';
+import {useEffect } from 'react';
 import './global.css';
 
 const RootLayout = () => {
