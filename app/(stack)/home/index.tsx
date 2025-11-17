@@ -6,7 +6,7 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 
 const HomeScreen = () => {
     const menuItems = [
-        { id: 1, label: "Prouctos", path: "/products" },
+        { id: 1, label: "Productos", path: "/products" },
         { id: 2, label: "Perfil", path: "/profile" },
         { id: 3, label: "Ajustes", path: "/settings" },
 
@@ -30,7 +30,7 @@ const HomeScreen = () => {
 
 
                 <Link href={"/products"} asChild>
-                    <CustomButton  color='primary'>Perfil</CustomButton>
+                    <CustomButton  color='primary'>Productos</CustomButton>
                 </Link>
 
 
