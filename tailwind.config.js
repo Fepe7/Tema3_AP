@@ -10,11 +10,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
+          //Aqui relacionamos los nombres que queremos con la fuente que hemos descargado,
+          // la segunda fuente es por si da error
         'work-black' : ['WorkSans-Black', 'sans-serif'],
         'work-light' : ['WorkSans-Light', 'sans-serif'],
         'work-medium' : ['WorkSans-Medium', 'sans-serif'],
       },
       colors:{
+          //Aqui relacinamos el nombre de un color con su valor hexadecimal
         primary: '#49129C',
         secondary : {
           DEFAULT : "#B40086",

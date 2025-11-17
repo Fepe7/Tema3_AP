@@ -1,13 +1,11 @@
-import { products } from '@/store/products.store';
+import {products} from '@/store/products.store';
 import {Link} from 'expo-router';
-import { FlatList, Text, View } from 'react-native';
-
+import {FlatList, Text, View} from 'react-native';
 
 
 const ProductsScreen = () => {
 
     return (
-
 
         <View className="flex flex-1 px-4">
             <FlatList
@@ -29,8 +27,7 @@ const ProductsScreen = () => {
                 )}
             />
         </View>
-    )
-        ;
+    );
 };
 
 

@@ -1,22 +1,14 @@
 import CustomButton from "@/components/shared/CustomButton"
-import { Link, router } from "expo-router"
+import {Link, router} from "expo-router"
 import React from 'react'
-import { Text, View } from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context'
+import {Text, View} from 'react-native'
+import {SafeAreaView} from 'react-native-safe-area-context'
 
 const HomeScreen = () => {
-    const menuItems = [
-        { id: 1, label: "Productos", path: "/products" },
-        { id: 2, label: "Perfil", path: "/profile" },
-        { id: 3, label: "Ajustes", path: "/settings" },
-
-    ]
-
     return (
         <SafeAreaView>
             <View className="px-10">
                 <Text className="text-5xl text-primary">Home</Text>
-
 
 
                 {/*Esto se podria hacer con un Custom button directamente pero me gusta mas asi */}
@@ -28,9 +20,8 @@ const HomeScreen = () => {
                 }
 
 
-
                 <Link href={"/products"} asChild>
-                    <CustomButton  color='primary'>Productos</CustomButton>
+                    <CustomButton color='primary'>Productos</CustomButton>
                 </Link>
 
 
@@ -45,7 +36,7 @@ const HomeScreen = () => {
 
                 {/*Boton variante texto only */}
                 <Link href={"/settings"} asChild>
-                    <CustomButton className="mb-10" variant="text-only" color="primary" >Ajustes variante</CustomButton>
+                    <CustomButton className="mb-10" variant="text-only" color="primary">Ajustes variante</CustomButton>
                 </Link>
 
 

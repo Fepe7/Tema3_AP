@@ -1,39 +1,36 @@
-import { useFonts } from 'expo-font';
-import { Slot, SplashScreen} from 'expo-router';
-import {useEffect } from 'react';
+import {useFonts} from 'expo-font';
+import {Slot, SplashScreen} from 'expo-router';
+import {useEffect} from 'react';
 import './global.css';
 
 const RootLayout = () => {
 
+
     SplashScreen.preventAutoHideAsync();
 
-    const [fontsLoaded, error] =useFonts({
+    //Se crean unos nombres para las fuentes que vamos a usar
+    const [fontsLoaded, error] = useFonts({
         'WorkSans-Black': require("../assets/fonts/WorkSans-Black.ttf"),
         'WorkSans-Light': require("../assets/fonts/WorkSans-Light.ttf"),
         'WorkSans-Medium': require("../assets/fonts/WorkSans-Medium.ttf"),
-
-
     })
 
     useEffect(() => {
-        if(error){
+        if (error) {
             throw error;
-
         }
 
-        if(fontsLoaded){
+        if (fontsLoaded) {
             SplashScreen.hideAsync();
         }
-
     }, [fontsLoaded, error])
 
-    if(!fontsLoaded && !error){
+    if (!fontsLoaded && !error) {
         return null
     }
 
 
-
-    return <Slot/>;        
+    return <Slot/>;
 }
 
 export default RootLayout
